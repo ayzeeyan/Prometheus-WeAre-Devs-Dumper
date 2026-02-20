@@ -31,9 +31,10 @@ Color3.fromRGB(60, 60, 60)
 textButton.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
 Color3.fromRGB(255, 255, 255)
 textButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-textButton.MouseButton1Click:Connect(function(...) end)
-local Humanoid = game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+textButton.MouseButton1Click:Connect(function(...)
+    local Humanoid = game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+end)
 textButton2.Parent = frame
 UDim2.new(0, 180, 0, 40)
 textButton2.Size = UDim2.new(0, 180, 0, 40)
@@ -44,6 +45,7 @@ Color3.fromRGB(60, 60, 60)
 textButton2.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
 Color3.fromRGB(255, 255, 255)
 textButton2.TextColor3 = Color3.fromRGB(255, 255, 255)
-textButton2.MouseButton1Click:Connect(function(...) end)
-local Humanoid2 = game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
-game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+textButton2.MouseButton1Click:Connect(function(...)
+    local Humanoid2 = game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+end)

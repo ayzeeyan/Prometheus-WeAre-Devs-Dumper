@@ -7,6 +7,7 @@ game:GetService("RunService").Stepped:Connect(function()
             for _, v in pairs(player.Character:GetDescendants()) do
                 if v:IsA("BasePart") then
                     v.CanCollide = false
+                    v.Transparency = 0.5
                 end
             end
         end
